@@ -60,8 +60,8 @@ body {
   .form-group {
     display: flex;
     flex-direction: column; }
-  .form-group:not(.form-group:first-child) {
-    margin-top: 20px; }
+    .form-group:not(.form-group:first-child) {
+      margin-top: 20px; }
   .form-controller {
     min-height: 50px;
     margin-top: 5px;
@@ -69,9 +69,9 @@ body {
     border: 1px solid green;
     border-radius: 8px;
     transition: 0.4s; }
-  .form-controller:active, .form-controller:focus {
-    outline: 2px solid green;
-    box-shadow: green 0 0 13px; }
+    .form-controller:active, .form-controller:focus {
+      outline: 2px solid green;
+      box-shadow: green 0 0 13px; }
 
 .btn {
   width: 100%;
@@ -87,9 +87,8 @@ body {
   background-color: #566B44;
   cursor: pointer;
   transition: 0.5s; }
-
-.btn:hover {
-  transform: scale(1.025); }
+  .btn:hover {
+    transform: scale(1.025); }
 
 .error ~ label {
   color: red; }
@@ -108,8 +107,8 @@ body {
   .form-footer a {
     color: #1C54A7;
     text-decoration: none; }
-  .form-footer a:hover {
-    text-decoration: underline; }
+    .form-footer a:hover {
+      text-decoration: underline; }
   .form-footer button {
     max-width: 200px; }
 
