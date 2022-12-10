@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Petit</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ribeye&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="/src/assets/styles/shareStyles/form-styles.css">
+</head>
+<body>
+    <div class="main-container">
+        <div class="logo">
+            <div class="egg"></div>
+            <span class="logo-text">Petit</span>
+        </div>
+        <section class="container">
+            <h2 class="form-header">Добро пожаловать!</h2>
+            <form action="" class="form" id="mainForm">
+                <div class="form-container">
+                    <div class="form-group">
+                        <label for="email">Логин</label>
+                        <input type="email" class="form-controller" name="email" id="email" placeholder="Введите email или телефон">
+                    </div>
+                    <div class="form-group">
+                        <label for="firstname">Имя</label>
+                        <input type="text" class="form-controller" name="firstname" id="firstname" placeholder="Введите Ваше имя">
+                    </div>
+                    <div class="form-group">
+                        <label for="lastname">Фамилия</label>
+                        <input type="text" class="form-controller" name="lastname" id="lastname" placeholder="Введите Вашу фамилию">
+                    </div>
+                    <div class="form-group">
+                        <label for="password">Пароль</label>
+                        <input type="password" class="form-controller" name="password" id="password" placeholder="Введите пароль">
+                    </div>
+                    <div class="form-group">
+                        <label for="confirm_password">Подтверждение пароля</label>
+                        <input type="password" class="form-controller" name="confirm_password" id="confirm_password" placeholder="Подтвердите пароль">
+                    </div>
+                    <button class="btn" type="submit">Регистрация</button>
+                </div>
+            </form>
+        </section>
+    </div>
+
+    <script src="https://unpkg.com/react@18/umd/react.development.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js" crossorigin></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.5/dist/jquery.validate.js"></script>
+
+    <script src="/src/assets/scripts/check-valid-form.js"></script>
+</body>
+</html>
