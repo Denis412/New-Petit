@@ -21,12 +21,6 @@ body {
   background: linear-gradient(#1CA1B04D, white, #79AD594D)
 }
 
-.c {
-  display: flex;
-  justify-content: center;
-  max-width: var(--width-site);
-}
-
 .main-container {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -111,6 +105,8 @@ body {
   &-controller {
     min-height: 50px;
 
+    font-family:  'Roboto Thin', cursive;
+
     margin-top: 5px;
     padding-left: 20px;
 
@@ -154,6 +150,7 @@ body {
 }
 
 .error ~ label {
+  font-family: 'Roboto Thin', cursive;
   color: red;
 }
 
@@ -188,16 +185,14 @@ body {
   }
 }
 
-//@media (min-width: 1001px) and (max-width: 1300px) {
-//  :root {
-//    --width-site: 1200px;
-//  }
-//}
+@media (max-width: 426px) {
+  .logo {
+    position: absolute;
+    top: 20px;
+  }
+}
 
-@media (max-width: 1000px) {
-  //body {
-  //  padding-top: 70px;
-  //}
+@media (min-width: 427px) and (max-width: 1000px) {
   .main-container {
     display: flex;
     flex-direction: column;
@@ -223,14 +218,7 @@ body {
   .container {
     margin-top: 40px;
   }
-
   .form {
-    width: 700px;
-  }
-}
-
-@media (max-width: 768px) {
-  body {
-    padding-top: 0;
+    width: 800px;
   }
 }

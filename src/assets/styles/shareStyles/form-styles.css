@@ -16,11 +16,6 @@ body {
   min-height: 100vh;
   background: linear-gradient(#1CA1B04D, white, #79AD594D); }
 
-.c {
-  display: flex;
-  justify-content: center;
-  max-width: var(--width-site); }
-
 .main-container {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -77,6 +72,7 @@ body {
       margin-top: 20px; }
   .form-controller {
     min-height: 50px;
+    font-family: 'Roboto Thin', cursive;
     margin-top: 5px;
     padding-left: 20px;
     border: 1px solid green;
@@ -104,6 +100,7 @@ body {
     transform: scale(1.025); }
 
 .error ~ label {
+  font-family: 'Roboto Thin', cursive;
   color: red; }
 
 .form-footer {
@@ -125,7 +122,11 @@ body {
   .form-footer button {
     max-width: 200px; }
 
-@media (max-width: 1000px) {
+@media (max-width: 426px) {
+  .logo {
+    position: absolute;
+    top: 20px; } }
+@media (min-width: 427px) and (max-width: 1000px) {
   .main-container {
     display: flex;
     flex-direction: column; }
@@ -147,9 +148,6 @@ body {
     margin-top: 40px; }
 
   .form {
-    width: 700px; } }
-@media (max-width: 768px) {
-  body {
-    padding-top: 0; } }
+    width: 800px; } }
 
 /*# sourceMappingURL=form-styles.css.map */
